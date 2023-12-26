@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dfpwm"
-version = "0.1.0"
+version = "0.1.2"
 description = "DFPWM convertor for Python"
 authors = ["cyan <contact@cyans.me>"]
 license = "MIT"
@@ -8,7 +8,7 @@ readme = "README.md"
 build = 'build.py'
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9"
 numpy = "^1.26.2"
 Cython = "^3.0.7"
 librosa = { version = "*", optional = true }
