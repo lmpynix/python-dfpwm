@@ -19,8 +19,8 @@ if sample_rate != dfpwm.SAMPLE_RATE:
 if len(data.shape) != 0 and data.shape[1] > 1:
     data = data[:, 0]  # get channel 0
 
-data = dfpwm.compressor(channel0)  # convert
-Path('out.dfpwm').write_bytes(data)  # write result to file
+dfpwm = dfpwm.compressor(data)  # convert
+Path('out.dfpwm').write_bytes(dfpwm)  # write result to file
 ```
 
 ## Build from source
