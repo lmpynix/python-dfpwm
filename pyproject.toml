@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dfpwm"
-version = "0.1.0"
+version = "0.1.4"
 description = "DFPWM convertor for Python"
 authors = ["cyan <contact@cyans.me>"]
 license = "MIT"
