@@ -2,6 +2,18 @@
 
 DFPWM convertor for Python
 
+## Installation
+
+### From PyPI
+You can get this package from PyPI
+if you are in py311 Linux x86
+
+```shell
+pip install dfpwm
+```
+
+### Build from source
+
 ## Usage
 
 ```python
@@ -37,6 +49,6 @@ This project use `poetry` to build,
 Make sure `poetry` is installed.
 
 ```shell
-poetry build -f sdist
+poetry build
 ```
 

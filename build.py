@@ -59,7 +59,8 @@ def build(setup_kwargs: dict):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 0 and sys.argv[0] == 'build':
+    params = sys.argv[1:]
+    if len(params) != 0 and 'build' == params[0]:
         if not CYTHON:
             print("Please install cython to convert to .c file")
             sys.exit(-1)
