@@ -14,4 +14,4 @@ def resample_from_file(io: "BinaryIO") -> tuple["np.ndarray", float]:
 
 def resample(data: np.ndarray, origin_samplerate: float, target_sample_rate=SAMPLE_RATE):
     import librosa
-    return librosa.resample(data, origin_samplerate, target_sample_rate)
+    return librosa.resample(data, orig_sr=origin_samplerate, target_sr=target_sample_rate)
