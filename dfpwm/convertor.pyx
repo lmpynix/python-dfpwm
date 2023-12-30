@@ -1,16 +1,11 @@
 # cython: language_level=3
 # cython: boundscheck=False
 # cython: wraparound=False
-import typing
-if typing.TYPE_CHECKING:
-    from typing import Callable, Iterable
-
 from libc.math cimport floor
 from libc.stdlib cimport malloc, free
 import numpy as np
 cimport numpy as np
 
-cdef int SAMPLE_RATE = 48000
 cdef int PREC = 10
 
 cdef short* proc_untracked(const float[:] input_data, const int sz) nogil:
@@ -71,8 +66,8 @@ cdef short* proc_untracked(const float[:] input_data, const int sz) nogil:
     return out
 
 cpdef compressor(
-        in_array,
-        tracker: Callable[[Iterable], Iterable] = None
+        in_array: np.ndarray[np.float32],
+        tracker: "typing.Callable"[["typing.Iterable"], "typing.Iterable"] = None
 ):
     cdef int charge = 0
     cdef int strength = 0

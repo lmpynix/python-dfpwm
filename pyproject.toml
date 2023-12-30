@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dfpwm"
-version = "0.1.5"
+version = "0.1.6"
 description = "DFPWM convertor for Python"
 authors = ["cyan <contact@cyans.me>"]
 license = "MIT"
@@ -13,6 +13,7 @@ librosa = { version = "*", optional = true }
 
 [tool.poetry.group.dev.dependencies]
 Cython = "^3.0.7"
+pytest = "^7.4.3"
 
 [build-system]
 requires = ["poetry-core", "numpy", "setuptools"]
