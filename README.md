@@ -12,8 +12,6 @@ if you are in py311 Linux x86
 pip install dfpwm
 ```
 
-### Build from source
-
 ## Usage
 
 ```python
