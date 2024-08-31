@@ -7,7 +7,7 @@ from setuptools import Extension
 from setuptools.command.build_ext import build_ext
 from setuptools.errors import PlatformError, CCompilerError, ExecError, PlatformError
 
-USE_CYTHON = os.environ.get('USE_CYTHON', False)
+USE_CYTHON = os.environ.get('USE_CYTHON', True)
 CYTHON = False
 try:
     from Cython.Build import cythonize
